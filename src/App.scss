@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Robot);
+
+// SASS variables
+$font-family: "Roboto", sans-serif;
+$light-grey: #dcdcdc;
+$very-light-grey: #eaeaea;
+$primary-color: #292c34;
+$subtle-grey: #888888;
+$very-light-bg: #f9f9f9;
+$logo-color: #3276b0;
+$white: #ffffff;
+
+// Mixins
+@mixin clean-style {
+  border: 1px solid $light-grey;
+  background: $white;
+  padding: 6px 10px;
+  color: $logo-color;
+  font-weight: bold;
+}
+
+// Reset CSS styles
+* {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+.main-container {
+  text-align: center;
+  margin: 50px;
+
+  .calendar {
+    display: inline-block;
+    padding: 30px;
+
+    .calendar-header {
+      .month-name {
+        text-align: left;
+        color: $logo-color;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .calendar-controls {
+        float: right;
+        position: relative;
+        top: -20px;
+
+        .date-selector {
+          -webkit-appearance: none;
+          border-radius: 0px;
+          font-size: 12px;
+          @include clean-style();
+          margin-right: 8px;
+          cursor: pointer;
+        }
+        .btn-month-nav {
+          @include clean-style();
+          background: $very-light-bg;
+          padding: 6.5px;
+          margin-right: 4px;
+          cursor: pointer;
+          position: relative;
+          top: -1px;
+          svg.fa-icon {
+            margin: 0px 5px;
+          }
+        }
+      }
+    }
+
+    .calendar-body {
+      clear: both;
+      .days-header {
+        border-bottom: 1px solid $very-light-grey;
+        .day-type {
+          display: inline-block;
+          width: 110px;
+          text-align: right;
+          padding-right: 10px;
+          padding-bottom: 6px;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: $logo-color;
+          font-weight: bold;
+        }
+      }
+
+      .day-row {
+        .calendar-day {
+          display: inline-block;
+          border-left: 1px solid $very-light-grey;
+          border-bottom: 1px solid $very-light-grey;
+          height: 75px;
+          width: 110px;
+          padding-top: 10px;
+          padding-right: 10px;
+          font-size: 15px;
+          text-align: right;
+          color: $primary-color;
+        }
+
+        .sunday {
+          background: $very-light-bg;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.br-1 {
+  border-right: 1px solid $very-light-grey;
+}
