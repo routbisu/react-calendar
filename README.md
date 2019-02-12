@@ -1,10 +1,14 @@
 This is a simple implementation of a calendar UI built using React.js
 
+## Installation
+
+Clone the repo, navigate to /react-calendar and run
+`npm install`
+
 ## To Run
 
 In the project directory, navigate to the project director and run:
-
-### `npm start`
+`npm start`
 
 ## Features
 
