@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Robot);
+
+// SASS variables
+$font-family: "Roboto", sans-serif;
+$light-grey: #dcdcdc;
+$very-light-grey: #eaeaea;
+$primary-color: #292c34;
+$subtle-grey: #888888;
+$very-light-bg: #f9f9f9;
+$logo-color: #3276b0;
+$white: #ffffff;
+
+// Mixins
+@mixin clean-style {
+  border: 1px solid $light-grey;
+  background: $white;
+  padding: 6px 10px;
+  color: $logo-color;
+  font-weight: bold;
+}
+
+// Reset CSS styles
+* {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+.br-1 {
+  border-right: 1px solid $very-light-grey;
+}
