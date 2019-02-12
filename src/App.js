@@ -6,7 +6,7 @@ import {
   faCalendarAlt
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Calendar from "./components/Calendar";
 
 library.add(faChevronCircleRight, faChevronCircleLeft, faCalendarAlt);
