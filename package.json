@@ -2,11 +2,13 @@
   "name": "react-calendar",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://routbisu.github.io/react-calendar/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.14",
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.0.1",
     "i": "^0.3.6",
     "node-sass": "^4.11.0",
     "npm": "^6.7.0",
@@ -19,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

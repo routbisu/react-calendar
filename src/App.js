@@ -15,11 +15,11 @@ class App extends Component {
   render() {
     return (
       <div className="main-container">
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <div>
             <Switch>
-              <Route path="/:year/:month" component={Calendar} />
-              <Route path="/" component={Calendar} />
+              <Route path={"/:year/:month"} component={Calendar} />
+              <Route path={"/"} component={Calendar} />
             </Switch>
           </div>
         </Router>

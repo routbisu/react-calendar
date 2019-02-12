@@ -52,9 +52,9 @@ export default class Calendar extends Component {
     if (firstDateDayCurrentMonth <= 6) {
       for (let i = 1; i < 7 - firstDateDayCurrentMonth + 1; i++) {
         if (
-          parseInt(currYear) == parseInt(currentYear) &&
-          parseInt(currMonth) == parseInt(currentMonth) &&
-          parseInt(currDate) == parseInt(i)
+          parseInt(currYear) === parseInt(currentYear) &&
+          parseInt(currMonth) === parseInt(currentMonth) &&
+          parseInt(currDate) === parseInt(i)
         ) {
           firstWeek.push({ date: i, isCurrentDate: true });
         } else {
@@ -192,8 +192,6 @@ export default class Calendar extends Component {
         </option>
       );
     }
-
-    console.log("this.state.currentMonth", this.state.currentMonth);
 
     return (
       <div className="calendar">
