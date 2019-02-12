@@ -24,15 +24,15 @@
         @include clean-style();
         margin-right: 8px;
         cursor: pointer;
+        padding: 6.5px;
       }
+
       .btn-month-nav {
         @include clean-style();
         background: $very-light-bg;
         padding: 6.5px;
         margin-right: 4px;
         cursor: pointer;
-        position: relative;
-        top: -1px;
         svg.fa-icon {
           margin: 0px 5px;
         }
@@ -74,6 +74,21 @@
       .sunday {
         background: $very-light-bg;
         color: $primary-color;
+      }
+
+      .overflow {
+        color: $subtle-grey;
+      }
+
+      .current-date span {
+        background: $logo-color;
+        color: $white;
+        display: inline-block;
+        text-align: center;
+        padding: 4px 7px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: 600;
       }
     }
   }

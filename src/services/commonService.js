@@ -1,4 +1,4 @@
-const monthsDict = [
+export const monthsDict = [
   "January",
   "Feburary",
   "March",
@@ -13,7 +13,7 @@ const monthsDict = [
   "December"
 ];
 
-const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+export const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 /**
  * Get Month name from month number

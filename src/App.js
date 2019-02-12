@@ -6,7 +6,7 @@ import {
   faCalendarAlt
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.scss";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Calendar from "./components/Calendar";
 
 library.add(faChevronCircleRight, faChevronCircleLeft, faCalendarAlt);
@@ -16,7 +16,12 @@ class App extends Component {
     return (
       <div className="main-container">
         <Router>
-          <Route path="/:year/:month" component={Calendar} />
+          <div>
+            <Switch>
+              <Route path="/:year/:month" component={Calendar} />
+              <Route path="/" component={Calendar} />
+            </Switch>
+          </div>
         </Router>
       </div>
     );
